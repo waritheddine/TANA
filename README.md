@@ -107,7 +107,7 @@ pairwise alignment of two input networks. The multiple case is similar.
                     efile     dataset/b-c.sim
                     efile     dataset/c-c.sim
                     scorefile     dataset/score_composit.model
-                    alignmentfile ./result/alignment_TANA.data
+                    alignmentfile ./result/alignment_TANA_rnd1.data
                     logfile       ./result/measure_time.txt
           --------------END OF POLICY--------------
 
@@ -161,7 +161,7 @@ pairwise alignment of two input networks. The multiple case is similar.
 (5)  The output
 
       The main files are :
-       (5.1) The output of the alignment is located in the file "alignment_TANA.data". Each protein is represented 
+       (5.1) The output of the alignment is located in the file "alignment_TANA_rnd1.data". Each protein is represented 
        by a string (separated by a tab), and each interaction is on a single line.
        (5.2) The affectation of the gene annotations for each protein belonging to the N input networks is located 
        in the file "affectProtToGene.txt".
