@@ -163,15 +163,18 @@ pairwise alignment of two input networks. The multiple case is similar.
       The main files are :
        (5.1) The output of the alignment is located in the file "alignment_TANA_rnd1.data". Each protein is represented 
        by a string (separated by a tab), and each interaction is on a single line.
-       (5.2) The affectation of the gene annotations for each protein belonging to the N input networks is located 
+       (5.2) The affectation from UniprotGOA for for each protein belonging to the N input networks is located 
        in the file "affectProtToGene.txt".
-       (5.3) The number of unkown functional protein is located in the file "alignUnknown.result".
-       (5.4) The required time to align the input networks is located in the file "measure_time.txt".
-       (5.5) The sequence, topological and functional similarities for each pair of compared protein 
+       (5.3) The number of unkown functional protein is located in the file "alignUnknown_rnd1.result".
+       (5.4) The predictions for the unannotated protein using the "CAFA id" are in the file "CAFA-Predicted-GOTerms.txt".
+       (5.5) The predictions for the unannotated protein using the "Uniprot id" are in the file "List-Predicted-GOTerms_rnd1".
+       (5.6) The file "scoreGOTerms_rnd1.txt" contains the scoring of GO Terms by transferring shared annotation to unannotated protein (marked with *) in each cluster belonging to the file "alignUnknown_rnd1.result".
+       (5.7) The required time to align the input networks is located in the file "measure_time.txt".
+       (5.8) The sequence, topological and functional similarities for each pair of compared protein 
        is located in the file "scoreRecords.txt".
-       (5.6) The informations : Alignment edges conserved for each species, the number of alignment nodes, 
+       (5.9) The informations : Alignment edges conserved for each species, the number of alignment nodes, 
        the Alpha parameter, nmax and the Alignment score, are located in the file "alignment_statistics.data".
-       (5.7) The number of unknown alignment records, and the number of proteins annotated with MF,BP and CC in alginment graph,
+       (6.1) The number of unknown alignment records, and the number of proteins annotated with MF,BP and CC in alginment graph,
        are located in the file "statistics.result".
 
 (6)  EXAMPLE
