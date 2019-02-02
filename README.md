@@ -3,8 +3,8 @@ TANA (Transferring Annotation via Network AlignmenT) is a tool for inferring pro
 Network Alignment).
 
 Written By: Warith Eddine DJEDDI (waritheddine@yahoo.fr),
-            Sadok BEN YAHIA (sadok.benyahia@fst.rnu.tn) and
-            Engelbert MEPHU NGUIFO (mephu@isima.fr)
+            Sadok BEN YAHIA (sadok.ben@taltech.ee) and
+            Engelbert MEPHU NGUIFO (engelbert.mephu_nguifo@uca.fr)
 
 This README describes the usage of the command line interface of TANA. 
 The executable TANA is compiled for Linux x86_64 platform.
@@ -84,7 +84,7 @@ pairwise alignment of two input networks. The multiple case is similar.
     B) Files: goa_<species>.gaf for each species → This set contains all GO annotations for canonical accessions 
       from the UniProt reference proteome for the species, which provides one protein per gene. 
       
-      IMPORTANT: Download gene annotation files for each species from the Uniprot Website "http://www.ebi.ac.uk/goa/downloads" and uncompress them under the "MAPPIN\data\goa" folder.
+      IMPORTANT: Download gene annotation files for each species from the Uniprot Website "http://www.ebi.ac.uk/goa/downloads" and uncompress them under the "TANA\data\goa" folder.
 
 (3) Create a file that specifies the file locations, species names etc.
    In the folder config/, the file "policy.input".
@@ -117,11 +117,11 @@ pairwise alignment of two input networks. The multiple case is similar.
     
    (4.1) Network files using blast e-value:
       
-      ./tana -alignment -alpha 0.3 -nmax 1000 -temp 50 -thr 0.3 -numspecies 3 -numthreads 8 -alignmentfile ./result/alignment_mappin.data -resultfolder ./result/
+      ./tana -alignment -alpha 0.3 -nmax 1000 -temp 50 -thr 0.3 -numspecies 3 -numthreads 8 -alignmentfile ./result/alignment_TANA.data -resultfolder ./result/
     
    (4.2) Network files using blast bitscore:
       
-      ./tana -alignment -alpha 0.3 -nmax 1000 -temp 50 -thr 0.3 -numspecies 3 -bscore true -numthreads 8 -alignmentfile ./result/alignment_mappin.data -resultfolder ./result/
+      ./tana -alignment -alpha 0.3 -nmax 1000 -temp 50 -thr 0.3 -numspecies 3 -bscore true -numthreads 8 -alignmentfile ./result/alignment_TANA.data -resultfolder ./result/
 
    The options are as follows (you can also use the "-h" or "--help" flag):
 
@@ -178,10 +178,10 @@ pairwise alignment of two input networks. The multiple case is similar.
        (6.1) Download TANA freely available at Github website: https://github.com/waritheddine/TANA
 
        (6.2) Run TANA on our test dataset with command:
-       ./tana -alignment -alpha 0.3 -nmax 1000 -temp 50 -thr 0.3 -numspecies 8 -bscore true -numthreads 8 -alignmentfile ./result/alignment_mappin.data -resultfolder ./result/
+       ./tana -alignment -alpha 0.3 -nmax 1000 -temp 50 -thr 0.3 -numspecies 8 -bscore true -numthreads 8 -alignmentfile ./result/alignment_TANA.data -resultfolder ./result/
 
        (6.3)Then you can find the all the involved output files in ./result/ . There are many other functions which you can see with "-help" option.
        (6.4) We note that checking the format of the files in the data folder after reading the execution instructions above might be quite helpful.
        (6.5) For this example, download the gene annotation file (goa_arabidopsis.gaf.gz, goa_worm.gaf.gz, goa_fly.gaf.gz, goa_ecoli.gaf.gz, goa_human.gaf.gz, goa_mouse.gaf.gz, goa_rat.gaf.gz, goa_yeast.gaf.gz) for the eight species 
-       (Arabidopsis, Worm, Fly, Ecoli, Human, Mouse, Rat and Yeast) from the Uniprot Website "http://www.ebi.ac.uk/GOA/downloads" and uncompress them under the "MAPPIN\data\GOA" folder. In addition, download the compress file "goa_uniprot_gcrp.gaf.tar.gz" from the same Url, and also uncompress it under the "MAPPIN\data\GOA" folder.
-       Finally, download gene ontology file from the Website "http://www.geneontology.org/" and uncompress it under the "MAPPIN\data" folder.
+       (Arabidopsis, Worm, Fly, Ecoli, Human, Mouse, Rat and Yeast) from the Uniprot Website "http://www.ebi.ac.uk/GOA/downloads" and uncompress them under the "TANA\data\goa" folder. In addition, download the compress file "goa_uniprot_gcrp.gaf.tar.gz" from the same Url, and also uncompress it under the "TANA\data\goa" folder.
+       Finally, download gene ontology file from the Website "http://www.geneontology.org/" and uncompress it under the "TANA\data" folder.
