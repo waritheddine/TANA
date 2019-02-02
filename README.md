@@ -168,10 +168,10 @@ pairwise alignment of two input networks. The multiple case is similar.
        (5.3) The number of unkown functional protein is located in the file "result/alignUnknown_rnd1.result".
        (5.4) The predictions for the unannotated protein using the "CAFA id" are in the file "Predictions/CAFA-Predicted-GOTerms.txt".
        (5.5) The predictions for the unannotated protein using the "Uniprot id" are in the file "Predictions/List-Predicted-GOTerms_rnd1".
-       (5.6) The file "result/scoreGOTerms_rnd1.txt" contains the scoring of GO Terms by transferring shared annotation to unannotated protein (marked with *) in each cluster belonging to the file "result/alignUnknown_rnd1.result".
+       (5.6) The file "Predictions/scoreGOTerms_rnd1.txt" contains the scoring of GO Terms by transferring shared annotation to unannotated protein (marked with *) in each cluster belonging to the file "result/alignUnknown_rnd1.result".
        (5.7) The required time to align the input networks is located in the file "measure_time.txt".
        (5.8) The sequence, topological and functional similarities for each pair of compared protein 
-       is located in the file "scoreRecords.txt".
+       is located in the file "result/scoreRecords.txt".
        (5.9) The informations : Alignment edges conserved for each species, the number of alignment nodes, 
        the Alpha parameter, nmax and the Alignment score, are located in the file "result/alignment_statistics.data".
        (6.1) The number of unknown alignment records, and the number of proteins annotated with MF,BP and CC in alginment graph,
